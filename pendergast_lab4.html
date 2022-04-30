@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--Jack Pendergast-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="CWeb 1010 at Dunwoody">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jack Pendergast">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab4</title>
+<style>
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 10px;
+		align-content: center;
+		background-color: #91A6FF;
+		padding: 10px;
+		margin:20px;
+	}
+		
+	.grid-container > div {
+		background-color: #FAFF7F;
+		text-align: center;
+		padding: 30px 0;
+		margin: 10px;
+		font-size: 30px;
+		box-shadow: 7px 7px 8px 0px #5C7AFF;
+		padding:1em;
+	}
+		
+	.item1 {
+		grid-column: 1 / span 2;
+		grid-row: 1;
+	}
+	.item2 {
+		grid-column: 3;
+		grid-row: 1 / span 2;
+	}
+	.item3{
+		grid-column: 1;
+		grid-row:2;
+	}
+	.item4{
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.item5 {
+		grid-column: 1 / span 3;
+		grid-row: 3;
+	}
+	.item6{
+		grid-column: 2;
+		grid-row: 4;
+	}
+	.item7{
+		grid-column: 4;
+		grid-row: 2/ span 3;
+	}
+	.item8{
+		grid-column:3;
+		grid-row:4;
+	}
+	.item9{
+		grid-column:1;
+		grid-row:4;
+	}
+	.item10{
+		grid-column:4;
+		grid-row:1;
+	}
+
+@media only screen and (max-width: 1024px){
+	body {background-color: #8CB369;}
+	.grid-container{
+		grid-template-columns: auto auto auto;
+		background-color: #5B8E7D;
+	}
+	.grid-container > div {
+		background-color: #F4A259;
+		box-shadow: 7px 7px 8px 0px #507C6D;
+	}
+	.item1{color: white;}
+	.item2{
+		color: white;
+		grid-column: 3;
+		grid-row: 1 / span 2;
+	}
+	.item3{color: white;}
+	.item4{color: white;}
+	.item5{color: white;}
+	.item6{
+		color: white;
+		grid-column: 1;
+		grid-row: 5;
+	}
+	.item7{
+		color: white;
+		grid-column:2 / span 2;
+		grid-row:4 / span 4;
+	}
+	.item8{
+		color:white;
+		grid-column:1;
+		grid-row:7;
+	}
+	.item9{
+		grid-column:1;
+		grid-row:4;
+	}
+	.item10{
+		grid-column:1;
+		grid-row:6;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	body {
+		background-color: blue;
+	}
+	.grid-container{
+		grid-template-columns: auto auto;
+		background-color: #30BCED;
+	}
+	.grid-container > div {
+		background-color: #FF5154;
+		box-shadow: 7px 7px 8px 0px #14AAE1;		
+	}
+	.item1{color: white;}
+	.item2{
+		color: white;
+		grid-column: 2;
+		grid-row: 2 / span 2;
+	}
+	.item3{
+		color: white;
+		grid-column:1;
+		grid-row:2;
+	}
+	.item4{
+		color: white;
+		grid-column:1;
+		grid-row:3;
+	}
+	.item5{
+		color: white;
+		grid-column:1 / span 2;
+		grid-row:4;
+	}
+	.item6{
+		color: white;
+		grid-column: 1;
+		grid-row: 6;
+	}
+	.item7{
+		color: white;
+		grid-column:2;
+		grid-row:5 / span 4;
+	}
+	.item8{
+		color:white;
+		grid-column:1;
+		grid-row:8;
+	}
+	.item9{
+		grid-column:1;
+		grid-row:5;
+	}
+	.item10{
+		grid-column:1;
+		grid-row:7;
+	}
+}
+</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="item1"><p>1</p></div>
+		<div class="item2"><p>2</p></div>
+		<div class="item3"><p>3</p></div>
+		<div class="item4"><p>4</p></div>
+		<div class="item5"><p>5</p></div>
+		<div class="item6"><p>6</p></div>
+		<div class="item7"><p>7</p></div>
+		<div class="item8"><p>8</p></div>
+		<div class="item9"><input type="button" value="Reload Page" onClick="document.location.reload(true)"></div>
+		<div class="item10"><div><button type="button" onclick="myFunction()">Set background color</button></div>
+			<script>
+				function myFunction() {
+				document.body.style.backgroundColor = "green"; }
+			</script></div>
+	</div>
+
+</body>
+</html> 
