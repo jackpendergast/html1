@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="description" content="CWeb 1010 at Dunwoody">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="author" content="Jack Pendergast">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link href="css/styleV1.css" type="text/css" rel="stylesheet" >
+      <link href="css/styleV2.css" type="text/css" rel="stylesheet" >
+      <link rel="icon" type="image/x-icon" href="images/icon.ico">
+
+      <title>Garfield Fanpage | Garfield Lore</title>
+
+      </head>
+
+  <body>
+
+    <div class="clear"></div>
+
+    <div class="container2">
+
+      <div class="title">
+
+        <h1>GARFIELD FANPAGE</h1>
+
+      </div>
+
+      <div class="navbar">
+        <div class="buttons">
+          <div id="menu">
+            <!--start CssMenu-->
+            <div class="menu-icon-wrapper">
+              <div class="menu-icon" onclick="toggleCssMenu(this)">
+                <div class="three-line">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div id="cssmenu">
+                <ul>
+                   <li> <a href="index.html">Home</a></li>
+                    <li><a href="lore.html">Garfield Lore</a></li>
+                    <li><a href="monday.html">Monday Hate Page</a></li>
+                    <li><a href="lasagna.html">Garfield's Lasagna Recipes</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <script>
+                function toggleCssMenu(icon) {
+                    var cssmenu = document.getElementById('cssmenu');
+                    if (icon.className.indexOf('active') == -1) {
+                        icon.className = 'menu-icon active';
+                  cssmenu.style.display = "block";
+                  setTimeout(function(){cssmenu.className = 'active';},0);            
+                    }
+                    else {
+                        icon.className = 'menu-icon';
+                  cssmenu.className = '';
+                  setTimeout(function(){cssmenu.style.display = "none";},411); 
+                    }
+                }
+            </script>
+          </div>
+        </div>
+        <div class="iconbox">
+          <img class="icon" src="images/icon.png" alt="Picture of Garfield looking cheeky."{float: right;}>
+        </div>
+      </div>
+
+      <div class="text">
+
+        <h1>History of Garfield</h1>
+
+        <p>Garfield is an American comic strip created by Jim Davis. Originally published locally as Jon in 1976, then in nationwide syndication from 1978 as Garfield, it chronicles the life of the title character, Garfield the cat; Jon Arbuckle, his human owner; and Odie, the dog. As of 2013, it was syndicated in roughly 2,580 newspapers and journals, and held the Guinness World Record for being the world's most widely syndicated comic strip.</p>
+
+      </div>
+
+      <div class="image">
+
+        <img id="scale" src="images/bigOlGarfield.jpg" alt="Jim Davis standing in front of a big inflatable Garfield.">
+
+      </div>
+
+      <div class="image2">
+
+        <img id="scale" src="images/realCat.jpg" alt="An Upset cat in a garfield comic strip.">
+  
+      </div>
+
+      <div class="text2">
+
+        <h1>History of the TV shows!</h1>
+      
+        <p>Garfield's animation debut was on The Fantastic Funnies, which aired on CBS on May 15, 1980, voiced by actor Scott Beach. Garfield was one of the strips featured, introduced as a newcomer (the strip was only two years old at the time). From 1982 to 1991, twelve primetime Garfield cartoon specials and one hour-long primetime documentary celebrating the character's 10th anniversary were aired; Lorenzo Music voiced Garfield in all of them. A Saturday morning cartoon show, Garfield and Friends, aired for seven seasons from 1988 to 1994. This adaption also starred Music as the voice of Garfield.
+
+        The Garfield Show, a CGI series, started development in 2007 to coincide with the strip's 30th anniversary in 2008.It premiered in France in December 2008 and made its U.S. debut on Cartoon Network on November 2, 2009. A new series is currently in development at Nickelodeon after Paramount Global acquired the franchise.</p>
+
+      </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img02">
+          <div id="caption"></div>
+          <script src="js/script.js"></script>
+
+        </div>
+
+      <div class="footer">
+       
+          Garfield is pretty great!
+          <br>
+          Author: Jack Pendergast
+          <br>
+          Sources:www.Wikipedia.com
+
+        <input type="button" value="Change Background Color" onClick="document.body.style.backgroundColor = 'darkgreen';">
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html> 
