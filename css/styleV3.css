@@ -27,7 +27,7 @@
 				"i11 i12 i13 i14 i15"
 				"i16 i17 i18 i19 i20"
 				"i21 i22 i23 i24 i25"
-				"i26 i27 i28";
+				"i26 i27 i28 i29 i30";
 				grid-gap: 1em;
 			}
 
@@ -169,4 +169,14 @@
 			.i28{
 
 				grid-area: i28;
+			}
+
+			.i29{
+
+				grid-area: i29;
+			}
+
+			.i30{
+
+				grid-area: i30;
 			}
