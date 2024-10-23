@@ -74,7 +74,7 @@
 				background-color: #ff7900;
 				display: grid;
 				grid-template-rows: 1em 1fr 1em;
-				grid grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr 1fr;
 				grid-template-areas: ". ." "buttons iconbox" ". .";
 				align-items: center;}
 
