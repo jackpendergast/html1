@@ -20,13 +20,14 @@
 				grid-area: gallery;
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-				grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 				grid-template-areas: 
 				"i1 i2 i3 i4 i5"
 				"i6 i7 i8 i9 i10"
 				"i11 i12 i13 i14 i15"
 				"i16 i17 i18 i19 i20"
-				"i21 i22 i23 i24 i25";
+				"i21 i22 i23 i24 i25"
+				"i26 i27 i28";
 				grid-gap: 1em;
 			}
 
@@ -153,4 +154,19 @@
 			.i25{
 
 				grid-area: i25;
+			}
+
+			.i26{
+
+				grid-area: i26;
+			}
+
+			.i27{
+
+				grid-area: i27;
+			}
+
+			.i28{
+
+				grid-area: i28;
 			}
